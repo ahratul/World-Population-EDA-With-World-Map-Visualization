@@ -38,19 +38,16 @@ continent_data.sort_values(by='2022 Population', inplace=True)
 population_features = ['2022 Population', '2020 Population', '2015 Population', '2010 Population', '2000 Population',
                        '1990 Population', '1980 Population', '1970 Population']
 population_features.reverse()
-# for feature in population_features:
-#     plt.plot(continent_data[feature], label=feature)
-# plt.legend()
-# plt.show()
 
-# 2022 Population
+st.title('World-Population-EDA-With-World-Map-Visualization')
+st.subheader('The data is from US Census Bureau. We are given the population of every countries from year 1970,1980,1990,2000,2010,2015,2020 and 2022. We are also given the Population Density, Area (km^2) of the country, Growth Rate, etc. We will perform EDA on the dataset and try to arrive on some interesting conclusions.')
+
 st.markdown('2022 Population')
 fig22 = px.choropleth(data,
                       locations='Country/Territory',
                       locationmode='country names',
                       color='2022 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='2022 Population',
                       color_continuous_scale='Viridis'
                       )
 
@@ -62,7 +59,6 @@ fig20 = px.choropleth(data,
                       locationmode='country names',
                       color='2020 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='2020 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig20)
@@ -73,7 +69,6 @@ fig15 = px.choropleth(data,
                       locationmode='country names',
                       color='2015 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='2015 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig15)
@@ -84,7 +79,6 @@ fig10 = px.choropleth(data,
                       locationmode='country names',
                       color='2010 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='2010 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig10)
@@ -95,7 +89,6 @@ fig00 = px.choropleth(data,
                       locationmode='country names',
                       color='2000 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='2000 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig00)
@@ -106,7 +99,6 @@ fig90 = px.choropleth(data,
                       locationmode='country names',
                       color='1990 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='1990 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig90)
@@ -117,7 +109,6 @@ fig80 = px.choropleth(data,
                       locationmode='country names',
                       color='1980 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      title='1980 Population',
                       color_continuous_scale='Viridis'
                       )
 st.write(fig80)
@@ -129,7 +120,6 @@ figwo = px.choropleth(data,
                       locationmode='country names',
                       color='World Population Percentage',
                       hover_name='Country/Territory',
-                      title='World Population Percentage',
                       color_continuous_scale='Viridis'
                       )
 st.write(figwo)
@@ -141,7 +131,6 @@ figgt = px.choropleth(data,
                       locationmode='country names',
                       color='Growth Rate',
                       hover_name='Country/Territory',
-                      title='Growth Rate',
                       color_continuous_scale='Viridis'
                       )
 st.write(figgt)
