@@ -48,7 +48,8 @@ fig22 = px.choropleth(data,
                       locationmode='country names',
                       color='2022 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 
 st.write(fig22)
@@ -59,7 +60,8 @@ fig20 = px.choropleth(data,
                       locationmode='country names',
                       color='2020 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig20)
 # 2015 Population
@@ -69,7 +71,8 @@ fig15 = px.choropleth(data,
                       locationmode='country names',
                       color='2015 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig15)
 # 2010 Population
@@ -79,7 +82,8 @@ fig10 = px.choropleth(data,
                       locationmode='country names',
                       color='2010 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig10)
 # 2000 Population
@@ -89,7 +93,8 @@ fig00 = px.choropleth(data,
                       locationmode='country names',
                       color='2000 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig00)
 # 1990 Population
@@ -99,7 +104,8 @@ fig90 = px.choropleth(data,
                       locationmode='country names',
                       color='1990 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig90)
 # 1980 Population
@@ -109,7 +115,8 @@ fig80 = px.choropleth(data,
                       locationmode='country names',
                       color='1980 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(fig80)
 
@@ -120,7 +127,8 @@ figwo = px.choropleth(data,
                       locationmode='country names',
                       color='World Population Percentage',
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(figwo)
 
@@ -131,6 +139,7 @@ figgt = px.choropleth(data,
                       locationmode='country names',
                       color='Growth Rate',
                       hover_name='Country/Territory',
-                      color_continuous_scale='Viridis'
+                      color_continuous_scale="Agsunset",
+                      projection='orthographic',
                       )
 st.write(figgt)
