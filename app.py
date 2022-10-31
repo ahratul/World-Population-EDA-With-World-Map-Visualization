@@ -60,7 +60,7 @@ fig20 = px.choropleth(data,
                       locationmode='country names',
                       color='2020 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Emrld",
                       projection='orthographic',
                       )
 st.write(fig20)
@@ -71,7 +71,7 @@ fig15 = px.choropleth(data,
                       locationmode='country names',
                       color='2015 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Purp",
                       projection='orthographic',
                       )
 st.write(fig15)
@@ -82,7 +82,7 @@ fig10 = px.choropleth(data,
                       locationmode='country names',
                       color='2010 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Mint",
                       projection='orthographic',
                       )
 st.write(fig10)
@@ -93,7 +93,7 @@ fig00 = px.choropleth(data,
                       locationmode='country names',
                       color='2000 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Peach",
                       projection='orthographic',
                       )
 st.write(fig00)
@@ -104,7 +104,7 @@ fig90 = px.choropleth(data,
                       locationmode='country names',
                       color='1990 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Brwnyl",
                       projection='orthographic',
                       )
 st.write(fig90)
@@ -115,7 +115,7 @@ fig80 = px.choropleth(data,
                       locationmode='country names',
                       color='1980 Population',  # we indicate the year we are interested in
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="amp",
                       projection='orthographic',
                       )
 st.write(fig80)
@@ -127,7 +127,7 @@ figwo = px.choropleth(data,
                       locationmode='country names',
                       color='World Population Percentage',
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="Oryel",
                       projection='orthographic',
                       )
 st.write(figwo)
@@ -139,7 +139,7 @@ figgt = px.choropleth(data,
                       locationmode='country names',
                       color='Growth Rate',
                       hover_name='Country/Territory',
-                      color_continuous_scale="Agsunset",
+                      color_continuous_scale="ice",
                       projection='orthographic',
                       )
 st.write(figgt)
